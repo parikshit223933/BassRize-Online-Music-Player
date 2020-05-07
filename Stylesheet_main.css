@@ -1,31 +1,63 @@
 body
 {
-    background-color:#0c1027;
+    background-color:white;
     margin:0px;
     font-family:"Segoe UI",Arial,sans-serif;
 }
 .navbar
 {
     height:10vh;
-    width:auto;
-    background-color:white;
+    background-color:#0c1027;
+    color:white;
     display:flex;
-    flex-direction: row;
-    color:black;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.navbar span
+{
+    display:inline-block;
 }
 .website-logo
 {
-    margin-left:20%;
-    margin-top:auto;
-    margin-bottom:auto;
+    margin-left:3%;
+    margin-right:12px;
 }
 .website-logo img
 {
     height:50px;
     width:50px;
 }
-.left , .right
+.website-info
+{
+    height:20px;
+}
+.flex-row
 {
     display:flex;
     flex-direction: row;
+}
+.notification-bell img
+{
+    height:30px;
+    width:30px;
+}
+.profile-picture img
+{
+    height:40px;
+    width:40px;
+    border-radius: 50% ;
+}
+.vertically-centered
+{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.left
+{
+    text-align:left;
+    width:max-content;
+}
+.right
+{
+    float:right;
 }
