@@ -1,3 +1,3 @@
 # BassRize-Online-Music-Player
 
-This online music player is completely based on Bootstrap, HTML and CSS.
+This online music player is completely based on HTML and CSS.
