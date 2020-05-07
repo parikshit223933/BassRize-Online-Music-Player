@@ -1,4 +1,31 @@
 body
 {
     background-color:#0c1027;
+    margin:0px;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+.navbar
+{
+    height:10vh;
+    width:auto;
+    background-color:white;
+    display:flex;
+    flex-direction: row;
+    color:black;
+}
+.website-logo
+{
+    margin-left:20%;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.website-logo img
+{
+    height:50px;
+    width:50px;
+}
+.left , .right
+{
+    display:flex;
+    flex-direction: row;
 }
