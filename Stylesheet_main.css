@@ -371,6 +371,11 @@ main
     border-radius: 100%;
     font-size:2vw;
     background-image: linear-gradient(0deg, rgb(162, 0, 255) -66%, rgba(0, 0, 0, 0));
+    transition: background-image ease-in-out 1s;
+}
+.theme-content p:hover
+{
+    background-image: linear-gradient(45deg, rgb(162, 0, 255) -66%, rgba(0, 0, 0, 0));
 }
 .theme-content
 {
@@ -388,3 +393,42 @@ main
     justify-content: space-around;
 }
 
+/* music themes -2 */
+.music-themes-2
+{
+    border:2px solid white;
+    position:relative;
+    top:30vw;
+    height:auto;
+    width:100%;
+    box-sizing: border-box;
+    padding:0px 5.4%;
+    display:flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+.music-themes-2 div img
+{
+    position:relative;
+    width:19.5vw;
+    height:13vw;
+    transition:all ease-in-out 0.1s;
+}
+.music-themes-2 div img:hover
+{
+    width:22vw;
+    height:33vw;
+}
+.music-themes-2 div
+{
+    width:19.5vw;
+    height:13vw;
+    overflow: hidden;
+}
+.music-themes-2 div h1 {
+    position: relative;
+    top: -8.3vw;
+    text-align: center;
+}
