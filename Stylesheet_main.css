@@ -299,3 +299,92 @@ main
 {
     text-align: center;
 }
+/* music themes */
+.music-themes
+{
+    position: relative;
+    top:28vw;
+    width:100%;
+    height:auto;
+    padding:0px 5.4%;
+    box-sizing: border-box;
+    background-color:#101642;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.stations
+{
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right: 10px;
+}
+#div1
+{
+    width:12vw;
+    height:8vw;
+    background-color: yellow;
+}
+#div2 {
+    position: relative;
+    top: -1vw;
+    left: 1vw;
+    width: 10vw;
+    height: 10vw;
+    background-color: yellowgreen;
+}
+#div3 
+{
+    position: relative;
+    top: -1vw;
+    left: 1vw;
+    width: 8vw;
+    height: 12vw;
+    background-color: orangered;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#div3 img
+{
+    width:5vw;
+    height:5vw;
+}
+.music-themes div img
+{
+    width:8vw;
+    height:8vw;
+    border-radius: 50%;
+}
+.theme-content p {
+    text-align: center;
+    position: relative;
+    top: -8.25vw;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size:2vw;
+    background-image: linear-gradient(0deg, rgb(162, 0, 255) -66%, rgba(0, 0, 0, 0));
+}
+.theme-content
+{
+    margin:3%;
+    height:8vw;
+    width:8vw;
+    text-align:center;
+    border-radius: 100%;
+    border:1px solid white; 
+}
+.theme-main
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
