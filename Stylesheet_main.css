@@ -379,7 +379,6 @@ main
     width:8vw;
     text-align:center;
     border-radius: 100%;
-    border:1px solid white; 
 }
 .theme-main
 {
@@ -388,3 +387,4 @@ main
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
