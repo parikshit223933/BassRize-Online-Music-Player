@@ -1,63 +1,102 @@
 body
 {
-    background-color:white;
+    background-color:#0c1027;
     margin:0px;
     font-family:"Segoe UI",Arial,sans-serif;
+    color:white;
 }
-.navbar
+h1, h2, h3, h4, h5, h6
+{
+    margin:0px;
+}
+.navigation-bar
 {
     height:10vh;
-    background-color:#0c1027;
-    color:white;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
+    width:auto;
 }
-.navbar span
+.navigation-bar>div
 {
     display:inline-block;
 }
 .website-logo
 {
-    margin-left:3%;
-    margin-right:12px;
+    height:max-content;
+    width:max-content;
+    position: relative;
+    top:20%;
+    left:7%;
+    float:left;
 }
 .website-logo img
 {
     height:50px;
     width:50px;
-}
-.website-info
-{
-    height:20px;
-}
-.flex-row
-{
     display:flex;
-    flex-direction: row;
+}
+.website-name
+{
+    position:relative;
+    top:15%;
+    left:8%;
+    float:left;
+}
+.favs
+{
+    position:relative;
+    float:left;
+    top:43%;
+    left:13%;
+}
+.search-bar {
+    position: absolute;
+    float: left;
+    top: 4%;
+    left: 48%;
+    width:20%;
+}
+.search-bar input
+{
+    width:100%;
+    font-size:16px;
+    text-decoration: none;
+    border-radius: 18px;
+    border: 1px solid white;
+    padding:5px;
+    font-weight:600;
+    text-align: center;
+}
+.notification-bell
+{
+    position:relative;
+    float:right;
+    top:45%;
+    right:20%;
 }
 .notification-bell img
 {
-    height:30px;
     width:30px;
+    height:30px;
+}
+.profile-picture
+{
+    position:relative;
+    float:right;
+    top:31%;
+    right:10%
 }
 .profile-picture img
 {
-    height:40px;
-    width:40px;
-    border-radius: 50% ;
+    width:45px;
+    height:45px;
+    border-radius: 100%;
 }
-.vertically-centered
+.red-dot img
 {
-    margin-top:auto;
-    margin-bottom:auto;
+    width:10px;
+    height:10px;
 }
-.left
-{
-    text-align:left;
-    width:max-content;
-}
-.right
-{
-    float:right;
+.red-dot {
+    position: absolute;
+    top: -18%;
+    left: 73%;
 }
