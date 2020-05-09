@@ -141,8 +141,7 @@ main
 }
 .section-2
 {    
-    border:2px solid white;
-    width:25%;
+    width:28%;
     height:87vh;
 }
 /* aside section 1 */
@@ -527,6 +526,7 @@ main
     flex-direction:row;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom:12%;
 }
 .heading h4 a
 {
@@ -537,6 +537,7 @@ main
 {
     position:fixed;
     right:4%;
+    top:14%;
     background-color:#f8f9fa;
     width:10%;
     height:auto;
@@ -547,6 +548,7 @@ main
     padding:1%;
     box-sizing: border-box;
     overflow:hidden;
+    z-index:2;/* to cover the heart icon */
     transform:scale(0);
     transition:all ease-in-out 0.25s;
 }
@@ -575,48 +577,59 @@ hr
 /* playlist content */
 .playlist-content
 {
-    border:1px solid white;
     width:100%;
-    height:300px;
+    height:77vh;
 /*     margin-top:4vh; */
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    overflow:scroll;
+}
+.playlist-content::-webkit-scrollbar
+{
+    display:none;
+}
+.left-content
+{
+    display:flex;
+    height:100%;
+    width:70%;
+    flex-direction: row;
+    flex-wrap:no-wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-content>div:nth-child(3)
+{
+    margin-left:12px;
+    width:50%;
+    word-wrap: break-word;
+}
+.right-content 
+{
+    position: relative;
+    bottom: 62%;
+    left: 90%;
+    width: min-content;
+    height: 20px;
+    color: white;
+    font-size: 20px;
 }
 .playlist-item
 {
-    width:100%;
-    height:100px;
-    border:1px solid white;
-    padding:0px 2%;
+    width:90%;
+    height:auto;
+    padding:0px 1%;
     box-sizing: border-box;
+    margin:1%;
+    transition:all ease-in-out 0.2s;
 }
-.playlist-item>div
+.playlist-item:hover
 {
-    display:inline-block;
-    line-height: 2em;
-}
-.playlist-item>div:nth-child(1)
-{
-    margin:0vw 1vw 0vw 0.5vw;
-}
-.playlist-item>div:nth-child(2)
-{
-    width:80px;
-    height:80px;
-    margin:0vw 1vw 0vw 0vw;
-}
-.playlist-item>div:nth-child(3)>p
-{
-    font-size:1.4vw;
-}
-.playlist-item>div:nth-child(4)
-{
-    position:relative;
-    left:50%;
+    box-shadow:0px 0px 12px 1px white;
 }
 .playlist-item img
 {
-    width:100%;
-    height:100%
+    width:80px;
+    height:80px;
 }
+
