@@ -10,23 +10,23 @@ h1, h2, h3, h4, h5, h6, p
     margin:0px;
 }
 /* top navigation bar */
-.navigation-bar {
-    height: 10vh;
+.navigation-bar 
+{
+    height: auto;
     width: auto;
-    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.5) -100%, rgba(0, 0, 0, 0) 200%);
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 1) -100%, rgba(255, 0, 235, 1) 254%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .navigation-bar>div
 {
     display:inline-block;
-}
-.website-logo
-{
-    height:max-content;
-    width:max-content;
-    position: relative;
-    top:20%;
-    left:7%;
-    float:left;
 }
 .website-logo img
 {
@@ -34,25 +34,7 @@ h1, h2, h3, h4, h5, h6, p
     width:50px;
     display:flex;
 }
-.website-name
-{
-    position:relative;
-    top:15%;
-    left:8%;
-    float:left;
-}
-.favs
-{
-    position:relative;
-    float:left;
-    top:43%;
-    left:13%;
-}
 .search-bar {
-    position: absolute;
-    float: left;
-    top: 4%;
-    left: 48%;
     width:20%;
 }
 .search-bar input
@@ -61,25 +43,32 @@ h1, h2, h3, h4, h5, h6, p
     font-size:16px;
     text-decoration: none;
     border-radius: 18px;
-    border: 1px solid white;
+    border: none;
     padding:5px;
     font-weight:500;
     text-align: center;
 }
 .search-ico
 {
-    position:absolute;
-    top:25%;
-    left:4%;
     color:rgba(0, 0, 0, 0.5);
 }
 .mic-ico
 {
-    position:absolute;
-    top:25%;
-    float:right;
-    right:0%;
     color:rgba(0, 0, 0, 0.5);
+}
+.search-bar>div:nth-child(1) {
+    display: inline-block;
+    position: relative;
+    width: min-content;
+    top: 3.4vh;
+    left: 1vw;
+}
+.search-bar>div:nth-child(3) {
+    display: inline-block;
+    position: relative;
+    width: min-content;
+    top: -3.2vh;
+    left: 17vw;
 }
 input:focus
 {
@@ -87,22 +76,12 @@ input:focus
 }
 .notification-bell
 {
-    position:relative;
-    float:right;
-    top:45%;
-    right:20%;
+    padding-bottom:15px;
 }
 .notification-bell img
 {
     width:30px;
     height:30px;
-}
-.profile-picture
-{
-    position:relative;
-    float:right;
-    top:31%;
-    right:10%
 }
 .profile-picture img
 {
@@ -116,9 +95,9 @@ input:focus
     height:10px;
 }
 .red-dot {
-    position: absolute;
-    top: -18%;
-    left: 73%;
+    position: relative;
+    top: 2vh;
+    left: 2vw;
 }
 
 
@@ -133,7 +112,6 @@ main
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    margin:0% 0px;
 }
 .aside
 {
@@ -153,13 +131,14 @@ main
 {    
     border:2px solid white;
     width:25%;
-    height:800px;
+    height:87vh;
 }
 /* aside section 1 */
 .outer-carousel
 {
     position:relative;
     left:9vw;
+    margin-top:5%;
 }
 .carousel {
     position: absolute;
