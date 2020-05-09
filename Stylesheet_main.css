@@ -85,10 +85,6 @@ input:focus
 {
     outline:none;
 }
-.notification-bell
-{
-    padding-bottom:15px;
-}
 .notification-bell img
 {
     width:30px;
@@ -100,19 +96,6 @@ input:focus
     height:45px;
     border-radius: 100%;
 }
-.red-dot img
-{
-    width:10px;
-    height:10px;
-}
-.red-dot {
-    position: relative;
-    top: 2vh;
-    left: 2vw;
-}
-
-
-
 
 
 /* main */
