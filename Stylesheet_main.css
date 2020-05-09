@@ -32,7 +32,18 @@ h1, h2, h3, h4, h5, h6, p
 {
     height:50px;
     width:50px;
-    display:flex;
+}
+.title-combo
+{
+    /* display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;  */    
+}
+.title-combo>div
+{
+    vertical-align: middle;
+    display:inline-block;
 }
 .search-bar {
     width:20%;
