@@ -549,11 +549,13 @@ main
     box-sizing: border-box;
     overflow:hidden;
     z-index:2;/* to cover the heart icon */
+    opacity:0;
     transform:scale(0);
     transition:all ease-in-out 0.25s;
 }
 #queue-option-box:target
 {
+    opacity:1;
     transform:scale(1);
 }
 .queue-options
@@ -583,6 +585,7 @@ hr
     display:flex;
     flex-direction: column;
     overflow:scroll;
+    cursor:pointer;
 }
 .playlist-content::-webkit-scrollbar
 {
@@ -613,6 +616,14 @@ hr
     height: 20px;
     color: white;
     font-size: 20px;
+}
+.right-content i
+{
+    transition: all ease-in-out 0.1s;
+}
+.right-content i:hover
+{
+    color:red;
 }
 .playlist-item
 {
