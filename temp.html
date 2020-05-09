@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <style>
-        .outer-div
-        {
-            height:300px;
-            width:50%;
-            border:2px solid black;
-            margin:50px;
-            padding:2px;
-            background-image: url("media\music themes 2\electronic.jpg");
-            background-position: center;
+        .dropbtn {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: lightgrey;
+            min-width: 200px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: grey;
         }
     </style>
 </head>
-<body>
-    <div class="outer-div">
-        
+
+<div class="dropdown">
+    <button class="dropbtn">Social Media</button>
+    <div class="dropdown-content">
+
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.youtube.com">YouTube</a>
+
     </div>
+</div>
 </body>
+
 </html>

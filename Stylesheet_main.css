@@ -521,4 +521,57 @@ main
 
 
 /* ASIDE SECTION 2 */
-
+.heading
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.heading h4 a
+{
+    text-decoration: none;
+    color:greenyellow;
+}
+.queue-options
+{
+    position:relative;
+    background-color:#f8f9fa;
+    width:50%;
+    height:auto;
+    display:flex;
+    float:right;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:3%;
+    box-sizing: border-box;
+    overflow:hidden;
+    transform:scale(0);
+    transition:all ease-in-out 0.25s;
+}
+#queue-option-box:target
+{
+    transform:scale(1);
+}
+#queue-option-box:
+{
+    transform:scale(0);
+}
+.queue-options
+{
+    color:black;
+}
+.queue-options p
+{
+    text-align: center;
+}
+.queue-options p a
+{
+    text-decoration:none;
+}
+hr
+{
+    width:90%;
+    color:black;
+}
