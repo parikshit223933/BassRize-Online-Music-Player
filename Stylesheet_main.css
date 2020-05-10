@@ -29,15 +29,63 @@ h1, h2, h3, h4, h5, h6, p
 {
     display:inline-block;
 }
+@keyframes rotating
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
 .website-logo img
 {
     height:50px;
     width:50px;
+    border-radius: 100%;
+    animation-name:rotating;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 .title-combo>div
 {
     vertical-align: middle;
     display:inline-block;
+}
+@keyframes flexible
+{
+    0%
+    {
+        transform:rotate(0deg);
+        color:red;
+    }
+    50%
+    {
+        transform:rotateY(360deg);
+        color:yellow;
+    }
+    75%
+    {
+        transform:scale(1.2);
+        color:green;
+    }
+    100%
+    {
+        transform:scaleX(1);
+        color:magenta;
+    }
+}
+.favs
+{
+    animation-name:flexible;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    perspective: 10000px;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
 }
 .search-bar {
     width:20%;
@@ -82,10 +130,29 @@ input:focus
 {
     outline:none;
 }
+@keyframes ringing_bell
+{
+    0%
+    {
+        transform:rotate(-30deg);
+    }
+    50%
+    {
+        transform:rotate(30deg);
+    }
+    100%
+    {
+        transform:rotate(-30deg);
+    }
+}
 .notification-bell img
 {
     width:30px;
     height:30px;
+    animation-name: ringing_bell;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 .profile-picture img
 {
@@ -172,7 +239,7 @@ main
 .carousel img:hover
 {
     z-index: 4;
-    box-shadow: 0px 0px 50px 0.1px black;
+    box-shadow: 0px 0px 12px 0.1px black;
     height:18vw;
     width:27vw;
 }
@@ -401,6 +468,7 @@ main
     min-width:123px;
     min-height: 82px;
     margin:5px;
+    cursor:pointer;
 }
 .inner-div
 {
@@ -426,6 +494,15 @@ main
 .outer-div:hover .inner-div
 {
     transform:scale(1.3);
+}
+.outer-div .inner-div span
+{
+    transform:scale(1);
+    transition:all ease-in-out 0.3s;
+}
+.outer-div:hover .inner-div span
+{
+    transform:scale(0.75);
 }
 .inner-div::before
 {
