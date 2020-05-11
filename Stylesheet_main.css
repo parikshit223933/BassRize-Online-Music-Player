@@ -379,16 +379,42 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     min-height:60px;
     height:10vw;
     border-radius: 50%;
-    transition: box-shadow ease-in-out 0.1s;
-}
-.popular-artists div img:hover
-{
-    box-shadow:0px 0px 4px 1px white;
 }
 .popular-artists div
 {
+    position:relative;
     margin:5px;
     text-align: center;
+}
+.popular-artist-content div div
+{
+    position:absolute;
+    display:flex;
+    top:-0.7vh;
+    left:-0.7vh;
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    border-radius: 50%;
+    background-color:rgb(0, 0, 0);
+    opacity:0;
+    transition: opacity ease-in-out 0.1s;
+}
+.popular-artist-content div div i
+{
+    margin:auto;
+    font-size:3vw;
+    opacity:0;
+    transition: opacity ease-in-out 0.2s;
+}
+.popular-artist-content div div:hover
+{
+    opacity:0.5;
+}
+.popular-artist-content div div:hover i
+{
+    opacity:1;
 }
 .popular-artists div p
 {
