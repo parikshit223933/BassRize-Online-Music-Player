@@ -172,6 +172,7 @@ main
 .aside
 {
     display:inline-block;
+    overflow:hidden;
 }
 .section-1
 {
@@ -291,7 +292,7 @@ main
     font-size:40px;
     padding-top:2%;
     text-align: center;
-    z-index:100;
+    z-index:5;
     transition: all ease-in-out 0.2s;
 }
 .play-button i
@@ -788,3 +789,65 @@ hr
     height:80px;
 }
 
+
+
+
+/* Footer */
+footer
+{
+    position:absolute;
+    bottom:2px;
+    width:100%;
+    height:60px;
+    background-color:#282828;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap:nowrap;
+    padding:0px 3%;
+    box-sizing: border-box;
+    z-index:6;
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description
+{
+    /* border:1px solid white; */
+    height:100%;
+    width:25%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#song-image
+{
+    width:50px;
+    height:50px;
+    min-width:50px;
+    min-height:50px;
+}
+#song-image img
+{
+    width:100%;
+    height:100%;
+}
+.heart-and-ban-icon
+{
+    height:100%;
+    padding-top:4%;
+}
+.song-desc
+{
+    margin-right:1%;
+    margin-left:1%;
+}
+.song-desc div:nth-child(1)
+{
+    font-size:14px;
+}
+.song-desc div:nth-child(2)
+{
+    font-size:12px;
+}
