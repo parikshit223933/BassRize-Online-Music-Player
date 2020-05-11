@@ -316,6 +316,43 @@ main
     margin-top: 2%;
 }
 
+.latest-release-dropdown
+{
+    position:absolute;
+    background-color: darkslateblue;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width:0; */
+    opacity:0;
+    /* height:0; */
+    top:23%;
+    overflow:hidden;
+    z-index:2;
+    border:1px solid black;
+    box-shadow: 0px 0px 2px 1px black;
+    padding:1%;
+    transition: all ease-in-out  0.5s;
+}
+.fa-ellipsis-h
+{
+    cursor:pointer;
+}
+input[type="checkbox"]
+{
+    display:none;
+}
+input[type="checkbox"]:checked~.latest-release-dropdown
+{
+    width:auto;
+    height:auto;
+    opacity:1;
+}
+.drop-item p
+{
+    text-align:center;
+}
 /* popular artists */
 .popular-artists
 {
