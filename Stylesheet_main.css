@@ -814,7 +814,7 @@ hr
 footer
 {
     position:absolute;
-    bottom:0px;
+    bottom:1px;
     width:100%;
     height:60px;
     background-color:#282828;
@@ -906,11 +906,11 @@ footer
     margin:0px 10px;
 }
 
-
-/* Special styling for WebKit/Blink */
-.slidecontainer {
+/* adjusting the slider for better visuals */
+.slidecontainer 
+{
     width: 100%;
-  }
+}
   
   .slider {
     -webkit-appearance: none;
@@ -921,13 +921,14 @@ footer
     opacity: 0.5;
     -webkit-transition: .2s;
     transition: opacity .2s;
-  }
+}
   
   .slider:hover {
     opacity: 1;
-  }
+}
   
-  .slider::-webkit-slider-thumb {
+  .slider::-webkit-slider-thumb 
+{
     -webkit-appearance: none;
     appearance: none;
     width: 17px;
@@ -935,11 +936,23 @@ footer
     border-radius: 50%;
     background: #007bff;
     cursor: pointer;
-  }
+}
   
-  .slider::-moz-range-thumb {
+  .slider::-moz-range-thumb 
+{
     width: 25px;
     height: 25px;
     background: #4CAF50;
     cursor: pointer;
-  }
+}
+
+
+/* third part of the footer */
+.extras
+{
+    width:20%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
