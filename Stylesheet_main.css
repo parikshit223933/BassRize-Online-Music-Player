@@ -60,22 +60,18 @@ h1, h2, h3, h4, h5, h6, p
     0%
     {
         transform:rotate(0deg);
-        color:red;
     }
     50%
     {
         transform:rotateY(360deg);
-        color:yellow;
     }
     75%
     {
         transform:scale(1.2);
-        color:green;
     }
     100%
     {
         transform:scaleX(1);
-        color:magenta;
     }
 }
 .favs
@@ -134,15 +130,15 @@ input:focus
 {
     0%
     {
-        transform:rotate(-30deg);
+        transform:rotate(-15deg);
     }
     50%
     {
-        transform:rotate(30deg);
+        transform:rotate(15deg);
     }
     100%
     {
-        transform:rotate(-30deg);
+        transform:rotate(-15deg);
     }
 }
 .notification-bell img
@@ -272,6 +268,11 @@ main
 {
     display:flex;
     flex-direction: row;
+    transition:box-shadow ease-in-out 0.1s;
+}
+.card:hover
+{
+    box-shadow:0px 0px 2px 1px white; 
 }
 .card img
 {
@@ -307,6 +308,7 @@ main
     margin:auto 9%;
 }
 .options {
+    position:relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -324,16 +326,16 @@ main
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* width:0; */
     opacity:0;
-    /* height:0; */
-    top:23%;
+    width:0px;
+    height:0px;
+    top:20px;
+    right:0px;
     overflow:hidden;
     z-index:2;
     border:1px solid black;
     box-shadow: 0px 0px 2px 1px black;
-    padding:1%;
-    transition: all ease-in-out  0.5s;
+    transition: all ease-in-out  0.3s;
 }
 .fa-ellipsis-h
 {
@@ -345,9 +347,10 @@ input[type="checkbox"]
 }
 input[type="checkbox"]:checked~.latest-release-dropdown
 {
-    width:auto;
+    width:max-content;
     height:auto;
     opacity:1;
+    padding:5px;
 }
 .drop-item p
 {
@@ -376,6 +379,11 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     min-height:60px;
     height:10vw;
     border-radius: 50%;
+    transition: box-shadow ease-in-out 0.1s;
+}
+.popular-artists div img:hover
+{
+    box-shadow:0px 0px 4px 1px white;
 }
 .popular-artists div
 {
@@ -585,6 +593,7 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
+    padding:0px 2px;
 }
 .language-content div img
 {
@@ -592,6 +601,11 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     min-width: 60px;
     height:10vw;
     min-height:60px;
+    transition:box-shadow ease-in-out 0.1s;
+}
+.language-content div img:hover
+{
+    box-shadow:0px 0px 10px 1px white;
 }
 .language-content div
 {
@@ -599,6 +613,7 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     width:10.2vw;
     min-width:60px;
 }
+
 .language-content div p:nth-child(2n)
 {
     width:100%;
@@ -606,7 +621,8 @@ input[type="checkbox"]:checked~.latest-release-dropdown
 }
 .language-content div p:nth-child(2n+1)
 {
-    font-size:0.8vw;
+    font-size:12px;
+    font-weight:lighter;
 }
 
 
@@ -732,7 +748,7 @@ hr
 }
 .playlist-item:hover
 {
-    box-shadow:0px 0px 12px 1px white;
+    box-shadow:0px 0px 2px 1px white;
 }
 .playlist-item img
 {
