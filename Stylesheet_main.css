@@ -1,6 +1,10 @@
+:root
+{
+    --background-image:linear-gradient(-45deg, #0037ff -100%, #33ff00 200%);
+}
 body
 {
-    background-color:#0c1027;
+    background-image: var(--background-image);
     margin:0px;
     font-family:"Segoe UI",Arial,sans-serif;
     color:white;
