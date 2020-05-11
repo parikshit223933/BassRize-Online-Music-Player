@@ -774,6 +774,24 @@ hr
     margin:1%;
     transition:all ease-in-out 0.1s;
 }
+@keyframes glowing-heart
+{
+    0%
+    {
+        color:yellow;
+    }
+    100%
+    {
+        color:red;
+    }
+}
+.playlist-item:hover .fa-heart
+{
+    animation-name: glowing-heart;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
 .playlist-item:hover
 {
     box-shadow:0px 0px 2px 1px white;
