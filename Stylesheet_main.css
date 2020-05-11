@@ -408,6 +408,7 @@ input[type="checkbox"]:checked~.latest-release-dropdown
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 .stations
 {
