@@ -220,13 +220,46 @@ main
 .jumbotron-detail
 {
     border:1px solid black;
-    width:69%;
+    width:67%;
     height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
 }
-
-
-
-
+.descriptive-part, .action-part
+{
+    border:1px solid black;
+    width:100%;
+    height:max-content;
+}
+.song-name-main, .followers
+{
+    display:inline-block;
+}
+.followers
+{
+    float: right;
+}
+.followers, .author
+{
+    font-size:80%;
+}
+.desc
+{
+    font-size:1vw;
+}
+/* action part */
+.action-part
+{
+    padding-top:20px;
+}
+.btns>button
+{
+    border:0px;
+    height:2vw;
+    width:5vw;
+}
 
 
 
