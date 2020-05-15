@@ -191,11 +191,38 @@ main
     width:28%;
     height:82vh;
 }
+
 /* aside section 1 */
 
+.jumbotron
+{
+    height:20vw;
+    width:100%;
+    border:1px solid black;
+    margin-top:12px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.jumbotron-image
+{
+    height:20vw;
+    width:20vw;
+}
+.jumbotron-image img
+{
+    height:100%;
+    width:100%;
+}
 
-
-
+.jumbotron-detail
+{
+    border:1px solid black;
+    width:69%;
+    height:100%;
+}
 
 
 
