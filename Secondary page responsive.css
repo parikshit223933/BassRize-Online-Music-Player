@@ -12,6 +12,32 @@
     {
         font-size:11px !important;
     }
+    .song-name-main h1
+    {
+        font-size:2.4vw;
+    }
+    .desc
+    {
+        font-size:1.2vw;
+    }
+}
+@media screen and (max-width:900px)
+{
+    .desc
+    {
+        font-size:1.2vw;
+    }
+}
+@media screen and (max-width:700px)
+{
+    .followers, .author
+    {
+        font-size:2vw;
+    }
+    .desc
+    {
+        font-size:1.3vw;
+    }
 }
 @media screen and (max-width:550px)
 {
@@ -41,5 +67,17 @@
     .notification-bell, .profile-picture
     {
         margin-top:8px;
+    }
+    .song-name-main h1
+    {
+        font-size:3vw;
+    }
+    .followers, .author
+    {
+        font-size:3vw;
+    }
+    .desc
+    {
+        font-size:1.5vw;
     }
 }
