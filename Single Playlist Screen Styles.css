@@ -3,6 +3,7 @@
     --background-image:linear-gradient(-45deg, #0037ff -100%, #33ff00 200%);
     --background-color:#0c1027;
     --jumbotron-color:#141b41;
+    --playlist-items-background-color:#1a1e33;
 }
 body
 {
@@ -213,11 +214,8 @@ main
 {
     height:20vw;
     width:20vw;
-}
-.jumbotron-image img
-{
-    height:100%;
-    width:100%;
+    background-image:linear-gradient(to bottom, transparent, rgba(20, 27, 65, 1)), url("media/latest\ english/roar.jpg");
+    background-size:cover;
 }
 
 .jumbotron-detail
@@ -249,7 +247,7 @@ main
 }
 .followers, .author
 {
-    font-size:80%;
+    font-size:1.5vw;
 }
 .desc
 {
@@ -260,12 +258,17 @@ main
 {
     padding-top:20px;
 }
+.action-part p
+{
+    font-size:1vw;
+}
 .btns>button
 {
     border:0px;
-    height:30px;
-    width:20%;
+    height:3vw;
+    width:10vw;
     color:white;
+    font-size:1.2vw;
 }
 .btns>button:nth-child(1)
 {
