@@ -1,0 +1,45 @@
+@media screen and (max-width:1200px)
+{
+    .favs
+    {
+        display:none !important;
+    }
+    .search-bar
+    {
+        width:30%;
+    }
+    input
+    {
+        font-size:11px !important;
+    }
+}
+@media screen and (max-width:550px)
+{
+    .website-logo img
+    {
+        height:30px;
+        width:30px;
+    }
+    .website-name h1
+    {
+        font-size:3vw;
+    }
+    .website-name h4
+    {
+        font-size:2vw;
+    }
+    .notification-bell img
+    {
+        width:20px;
+        height:20px;
+    }
+    .profile-picture img
+    {
+        width:30px;
+        height:30px;
+    }
+    .notification-bell, .profile-picture
+    {
+        margin-top:8px;
+    }
+}

@@ -92,8 +92,10 @@ h1, h2, h3, h4, h5, h6, p
     transform-style: preserve-3d;
     animation-iteration-count: infinite;
 }
+
 .search-bar {
     width:20%;
+    position:relative;
 }
 .search-bar input
 {
@@ -105,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p
     padding:5px;
     font-weight:500;
     text-align: center;
-    transition:all ease-in-out 1s;
+    transition:all ease-in-out 0.1s;
 }
 .search-ico
 {
@@ -117,19 +119,19 @@ h1, h2, h3, h4, h5, h6, p
 }
 .search-bar>div:nth-child(1) {
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: min-content;
-    top: 3.1vh;
-    left: 1vw;
-    transition:all ease-in-out 1s;
+    left:5%;
+    top:10%;
+    transition:all ease-in-out 0.1s;
 }
 .search-bar>div:nth-child(3) {
     display: inline-block;
-    position: relative;
+    position: absolute;
     width: min-content;
-    top: -3.0vh;
-    left: 17vw;
-    transition:all ease-in-out 1s;
+    right:0%;
+    top:10%;
+    transition:all ease-in-out 0.1s;
 }
 input:focus
 {
@@ -258,7 +260,7 @@ main
 /* action part */
 .action-part
 {
-    padding-top:20px;
+    padding-top:2vw;
 }
 .action-part p
 {
@@ -455,23 +457,6 @@ main
     text-align: right;
     height:100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
