@@ -4,6 +4,7 @@
     --background-color:#0c1027;
     --jumbotron-color:#141b41;
     --playlist-items-background-color:#1a1e33;
+    --playlist-items-background-color-on-hover:#2e3249;
 }
 body
 {
@@ -209,6 +210,7 @@ main
     justify-content: space-between;
     align-items: center;
     background-color:var(--jumbotron-color);
+    margin-bottom: 40px;
 }
 .jumbotron-image
 {
@@ -280,40 +282,83 @@ main
 }
 .playlist-item
 {
-    border:1px solid white;
     /* height:60px;
     width:100%; */
     height:8vh;
-    margin:30px 0px;
+
     box-sizing: border-box;
     background-color: var(--playlist-items-background-color);
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom:12px;
+    transition:all ease-in-out 0.1s;
 }
-.left, .center, .right
+.playlist-item:hover
+{
+    background-color:var(--playlist-items-background-color-on-hover);
+}
+.left
 {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    border:1px solid white;
-    width:min-content;
+    width:30%;
     height:100%;
-    box-sizing: border-box;
     padding:0% 1%;
 }
-.left div:nth-child(2)
+.center
 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:min-content;
     height:100%;
-    width:60px;
-    margin:0px 6%;
 }
-.left div:nth-child(2) img
+.right
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50px;
+    height:100%;
+    padding-right:2%;
+}
+.left>div:nth-child(2)
+{
+    height:80%;
+    min-width:50px;
+    max-width:50px;
+    margin:0px 5% 0px 2%;
+    position:relative;
+}
+.left>div:nth-child(2) img
 {
     width:100%;
     height:100%;
+}
+.play-btn
+{
+    background-color:black;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    opacity:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition:all ease-in-out 0.1s;
+}
+.play-btn:hover
+{
+    opacity:0.7;
 }
 .left div p
 {
@@ -327,6 +372,10 @@ main
 .right
 {
     color:rgb(185, 185, 185);
+}
+.right div:nth-child(1)
+{
+    margin-right:27%;
 }
 
 
