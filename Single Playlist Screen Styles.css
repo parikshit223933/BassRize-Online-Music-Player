@@ -1,10 +1,13 @@
 :root
 {
     --background-image:linear-gradient(-45deg, #0037ff -100%, #33ff00 200%);
+    --background-color:#0c1027;
+    --jumbotron-color:#141b41;
 }
 body
 {
-    background-image: var(--background-image);
+    /* background-image: var(--background-image); */
+    background-color:var(--background-color);
     margin:0px;
     font-family:"Segoe UI",Arial,sans-serif;
     color:white;
@@ -198,13 +201,13 @@ main
 {
     height:20vw;
     width:100%;
-    border:1px solid black;
     margin-top:12px;
     box-sizing: border-box;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color:var(--jumbotron-color);
 }
 .jumbotron-image
 {
@@ -219,23 +222,26 @@ main
 
 .jumbotron-detail
 {
-    border:1px solid black;
     width:67%;
     height:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
+    padding-right:12px;
 }
 .descriptive-part, .action-part
 {
-    border:1px solid black;
     width:100%;
     height:max-content;
 }
 .song-name-main, .followers
 {
     display:inline-block;
+}
+.song-name-main h1
+{
+    font-size:2vw;
 }
 .followers
 {
@@ -257,10 +263,18 @@ main
 .btns>button
 {
     border:0px;
-    height:2vw;
-    width:5vw;
+    height:30px;
+    width:20%;
+    color:white;
 }
-
+.btns>button:nth-child(1)
+{
+    background-image:linear-gradient(-19deg, red 0%, blue 100%);
+}
+.btns>button:nth-child(2)
+{
+    background-color:transparent;
+}
 
 
 
