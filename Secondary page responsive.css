@@ -24,8 +24,27 @@
 	}
 	.section-2 {
         /* display: none; */
-        position:absolute;
-        background-color: #1f1f1f;
+		position:absolute;
+		width:300px;
+		height:68vh;
+		background-color: #008560;
+		box-shadow: 0px 0px 2px 1px white;
+		right:0px;
+		top:23.5%;
+		overflow:scroll;
+	}
+	.list
+	{
+		overflow:hidden;
+		height:auto;
+	}
+	.list-item
+	{
+		background-color:#1a1e33;
+	}
+	.section-2::-webkit-scrollbar
+	{
+		display:none;
 	}
 	.section-1 {
 		width: 100%;
