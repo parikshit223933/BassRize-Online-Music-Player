@@ -172,7 +172,7 @@ main {
 .section-2 {
 	width: 28%;
     height: 82vh;
-    z-index:2;
+	z-index:2;
 }
 
 /* aside section 1 */
@@ -267,7 +267,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 12px;
-	transition: all ease-in-out 0.1s;
+	/* transition: all ease-in-out 0.1s; */
 }
 .playlist-item:hover {
 	background-color: var(--playlist-items-background-color-on-hover);
@@ -358,7 +358,7 @@ main {
 
 
 
-.more-button {
+label {
 	display: none;
 	position:absolute;
 	right:0%;
@@ -371,7 +371,7 @@ main {
 	text-align: center;
 	background-image: linear-gradient(red, blue);
 }
-.more-button input
+label~input
 {
 	display:none;
 }

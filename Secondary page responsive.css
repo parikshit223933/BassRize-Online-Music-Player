@@ -19,32 +19,37 @@
 	.desc {
 		font-size: 1.6vw;
 	}
-	.more-button {
+	label {
 		display: block;
 	}
 	.section-2 {
-        /* display: none; */
-		position:absolute;
-		width:300px;
-		height:68vh;
-		background-color: #008560;
+		visibility: hidden;
+		opacity:0;
+		position: absolute;
+		width: 300px;
+		height: 68vh;
+		background-color: #050043;
 		box-shadow: 0px 0px 2px 1px white;
-		right:0px;
-		top:23.5%;
-		overflow:scroll;
+		right: 0px;
+		top: 23.5%;
+		overflow: scroll;
+		transition:opacity ease-in-out 0.5s;
+		
 	}
-	.list
+	input[type="checkbox"]:checked~.section-2
 	{
-		overflow:hidden;
-		height:auto;
+		visibility: visible;
+		opacity:1;
 	}
-	.list-item
-	{
-		background-color:#1a1e33;
+	.list {
+		overflow: hidden;
+		height: auto;
 	}
-	.section-2::-webkit-scrollbar
-	{
-		display:none;
+	.list-item {
+		background-color: #1a1e33;
+	}
+	.section-2::-webkit-scrollbar {
+		display: none;
 	}
 	.section-1 {
 		width: 100%;
@@ -106,16 +111,22 @@
 	}
 	.desc {
 		font-size: 3vw;
+		padding-left:4px;
 	}
 	.action-part {
 		padding-top: 0px;
 	}
 	.jumbotron {
-        height: 60vw;
-        text-align: justify;
+		height: 60vw;
+		text-align: justify;
 	}
 	.jumbotron-image {
 		height: 60vw;
 		width: 60vw;
+	}
+	.btns > button {
+		height: 8vw;
+		width: 17vw;
+		font-size: 3.2vw;
 	}
 }
