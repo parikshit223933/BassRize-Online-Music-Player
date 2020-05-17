@@ -1,83 +1,102 @@
-@media screen and (max-width:1200px)
-{
-    .favs
-    {
-        display:none !important;
-    }
-    .search-bar
-    {
-        width:30%;
-    }
-    input
-    {
-        font-size:11px !important;
-    }
-    .song-name-main h1
-    {
-        font-size:2.4vw;
-    }
-    .desc
-    {
-        font-size:1.2vw;
-    }
+@media screen and (max-width: 1200px) {
+	.favs {
+		display: none !important;
+	}
+	.search-bar {
+		width: 30%;
+	}
+	input {
+		font-size: 11px !important;
+	}
+	.song-name-main h1 {
+		font-size: 2.4vw;
+	}
+	.desc {
+		font-size: 1.2vw;
+	}
 }
-@media screen and (max-width:900px)
-{
-    .desc
-    {
-        font-size:1.2vw;
-    }
+@media screen and (max-width: 900px) {
+	.desc {
+		font-size: 1.6vw;
+	}
+	.more-button {
+		display: block;
+	}
+	.section-2 {
+        /* display: none; */
+        position:absolute;
+        background-color: #1f1f1f;
+	}
+	.section-1 {
+		width: 100%;
+	}
+	.jumbotron {
+		height: 30vw;
+	}
+	.jumbotron-image {
+		height: 30vw;
+		width: 30vw;
+	}
+	.action-part p {
+		font-size: 2vw;
+	}
+	.btns > button {
+		height: 4vw;
+		width: 11vw;
+		font-size: 1.7vw;
+	}
 }
-@media screen and (max-width:700px)
-{
-    .followers, .author
-    {
-        font-size:2vw;
-    }
-    .desc
-    {
-        font-size:1.3vw;
-    }
+@media screen and (max-width: 700px) {
+	.followers,
+	.author {
+		font-size: 2vw;
+	}
+	.desc {
+		font-size: 1.8vw;
+	}
 }
-@media screen and (max-width:550px)
-{
-    .website-logo img
-    {
-        height:30px;
-        width:30px;
-    }
-    .website-name h1
-    {
-        font-size:3vw;
-    }
-    .website-name h4
-    {
-        font-size:2vw;
-    }
-    .notification-bell img
-    {
-        width:20px;
-        height:20px;
-    }
-    .profile-picture img
-    {
-        width:30px;
-        height:30px;
-    }
-    .notification-bell, .profile-picture
-    {
-        margin-top:8px;
-    }
-    .song-name-main h1
-    {
-        font-size:3vw;
-    }
-    .followers, .author
-    {
-        font-size:3vw;
-    }
-    .desc
-    {
-        font-size:1.5vw;
-    }
+@media screen and (max-width: 550px) {
+	.website-logo img {
+		height: 30px;
+		width: 30px;
+	}
+	.website-name h1 {
+		font-size: 3vw;
+	}
+	.website-name h4 {
+		font-size: 2vw;
+	}
+	.notification-bell img {
+		width: 20px;
+		height: 20px;
+	}
+	.profile-picture img {
+		width: 30px;
+		height: 30px;
+	}
+	.notification-bell,
+	.profile-picture {
+		margin-top: 8px;
+	}
+	.song-name-main h1 {
+		font-size: 3vw;
+	}
+	.followers,
+	.author {
+		font-size: 3vw;
+	}
+	.desc {
+		font-size: 3vw;
+	}
+	.action-part {
+		padding-top: 0px;
+	}
+	.jumbotron {
+        height: 60vw;
+        text-align: justify;
+	}
+	.jumbotron-image {
+		height: 60vw;
+		width: 60vw;
+	}
 }
