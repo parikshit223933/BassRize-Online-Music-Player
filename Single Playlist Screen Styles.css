@@ -171,8 +171,8 @@ main {
 }
 .section-2 {
 	width: 28%;
-    height: 82vh;
-	z-index:2;
+	height: 82vh;
+	z-index: 2;
 }
 
 /* aside section 1 */
@@ -343,37 +343,21 @@ main {
 	margin-left: 27%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 label {
 	display: none;
-	position:absolute;
-	right:0%;
-	top:20%;
+	position: absolute;
+	right: 0%;
+	top: 20%;
 	padding-bottom: 5px;
 	z-index: 3;
-	width:70px;
-	font-size:20px;
-	height:21px;
+	width: 70px;
+	font-size: 20px;
+	height: 21px;
 	text-align: center;
 	background-image: linear-gradient(red, blue);
 }
-label~input
-{
-	display:none;
+label ~ input {
+	display: none;
 }
 /* ASIDE SECTION -2 */
 .section-heading {
@@ -433,7 +417,7 @@ label~input
 	text-align: right;
 	height: 100%;
 }
-
+/* footer part */
 footer {
 	position: absolute;
 	bottom: 1px;
