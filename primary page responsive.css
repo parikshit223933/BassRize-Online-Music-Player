@@ -93,16 +93,16 @@
 	}
 	.extras > div:nth-child(4) {
 		display: none;
-    }
-    .outer-div {
-        width: 36vw;
-        height: 24vw;
-        min-width: 123px;
-        min-height: 82px;
-    }
-    .outer-div .inner-div span {
-        font-size: 4vw;
-    }
+	}
+	.outer-div {
+		width: 36vw;
+		height: 24vw;
+		min-width: 123px;
+		min-height: 82px;
+	}
+	.outer-div .inner-div span {
+		font-size: 4vw;
+	}
 }
 @media screen and (max-width: 550px) {
 	.website-logo img {
@@ -146,31 +146,29 @@
 	.music-themes div img {
 		width: 18vw;
 		height: 18vw;
-    }
-    
+	}
 
-    /* stations */
-    #div1 {
-        width: 30vw;
-        height: 20vw;
-    }
-    #div2 {
-        width: 28vw;
-        height: 24vw;
-    }
-    #div3 {
-
-        width: 26vw;
-        height: 26vw;
-    }
-    #div3 img {
-        width: 12vw;
-        height: 12vw;
-    }
-    #div3 p {
-        font-size: 5vw;
-    }
-    .outer-div .inner-div span {
-        font-size: 6vw;
-    }
+	/* stations */
+	#div1 {
+		width: 30vw;
+		height: 20vw;
+	}
+	#div2 {
+		width: 28vw;
+		height: 24vw;
+	}
+	#div3 {
+		width: 26vw;
+		height: 26vw;
+	}
+	#div3 img {
+		width: 12vw;
+		height: 12vw;
+	}
+	#div3 p {
+		font-size: 5vw;
+	}
+	.outer-div .inner-div span {
+		font-size: 6vw;
+	}
 }
