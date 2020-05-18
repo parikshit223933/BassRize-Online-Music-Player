@@ -346,7 +346,7 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
     position: relative;
     display:flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:center;
 }
 .popular-artist-content>div>div {
@@ -436,6 +436,13 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 	height: 8vw;
 	border-radius: 50%;
 }
+.theme-content {
+	margin: 3%;
+	height: 8vw;
+	width: 8vw;
+	text-align: center;
+	border-radius: 100%;
+}
 .theme-content p {
 	text-align: center;
 	position: relative;
@@ -461,13 +468,7 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 		rgba(0, 0, 0, 0)
 	);
 }
-.theme-content {
-	margin: 3%;
-	height: 8vw;
-	width: 8vw;
-	text-align: center;
-	border-radius: 100%;
-}
+
 .theme-main {
 	display: flex;
 	flex-direction: row;
@@ -703,7 +704,7 @@ hr {
 	padding: 0px 1%;
 	box-sizing: border-box;
 	margin: 1%;
-	transition: all ease-in-out 0.1s;
+	/* transition: all ease-in-out 0.1s; */
 }
 @keyframes glowing-heart {
 	0% {
