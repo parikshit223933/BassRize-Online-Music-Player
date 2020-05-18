@@ -16,6 +16,11 @@ h6,
 p {
 	margin: 0px;
 }
+a
+{
+    text-decoration: none;
+    color:white;
+}
 /* top navigation bar */
 .navigation-bar {
 	height: auto;
@@ -330,7 +335,7 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.popular-artists div img {
+.popular-artists div a img {
 	width: 10vw;
 	min-width: 60px;
 	min-height: 60px;
@@ -342,14 +347,14 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 	margin: 5px;
 	text-align: center;
 }
-.popular-artist-content > div {
+.popular-artist-content >a> div {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 }
-.popular-artist-content > div > div {
+.popular-artist-content>a > div > div {
 	position: absolute;
 	display: flex;
 	/* top: 0px;
@@ -364,16 +369,16 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 	opacity: 0;
 	transition: opacity ease-in-out 0.1s;
 }
-.popular-artist-content div div i {
+.popular-artist-content a div div i {
 	margin: auto;
 	font-size: 3vw;
 	opacity: 0;
 	transition: opacity ease-in-out 0.2s;
 }
-.popular-artist-content div div:hover {
+.popular-artist-content a div div:hover {
 	opacity: 0.5;
 }
-.popular-artist-content div div:hover i {
+.popular-artist-content a div div:hover i {
 	opacity: 1;
 }
 .popular-artists div p {
