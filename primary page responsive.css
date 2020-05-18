@@ -10,7 +10,7 @@
 	}
 }
 @media screen and (max-width: 900px) {
-    label[for="more"] {
+	label[for="more"] {
 		display: block;
 	}
 	.section-2 {
@@ -22,20 +22,50 @@
 		background-color: #050043;
 		box-shadow: 0px 0px 2px 1px white;
 		right: 0px;
-        top: 23.5%;
-        z-index: 2;
+		top: 23.5%;
+		z-index: 5;
 		overflow: scroll;
 		transition: opacity ease-in-out 0.5s;
+	}
+	.playlist-content {
+		overflow: visible;
+	}
+	.queue-options {
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 7%;
+		right: 0%;
 	}
 	input[id="more"]:checked ~ .section-2 {
 		visibility: visible;
 		opacity: 1;
-    }
-    .section-2::-webkit-scrollbar {
+	}
+	.section-2::-webkit-scrollbar {
 		display: none;
 	}
 	.section-1 {
 		width: 100%;
+	}
+	.card {
+		min-width: 250px;
+	}
+	.outer-carousel {
+		height: 9%;
+	}
+	.carousel img {
+		height: 23vw;
+		width: 34.5vw;
+	}
+	.carousel img:nth-child(1) {
+		left: 56vw;
+	}
+	.carousel img:nth-child(3) {
+		right: 56vw;
+	}
+	.carousel img:hover {
+		height: 27vw;
+		width: 40.5vw;
 	}
 }
 @media screen and (max-width: 700px) {
