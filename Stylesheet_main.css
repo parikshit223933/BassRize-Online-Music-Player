@@ -581,7 +581,22 @@ input[type="checkbox"]:checked ~ .latest-release-dropdown {
 }
 
 /* #007bff */
-
+label[for="more"] {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	padding-bottom: 5px;
+	z-index: 3;
+	width: 70px;
+	font-size: 20px;
+	height: 21px;
+	text-align: center;
+	background-image: linear-gradient(red, blue);
+}
+label[for="more"] ~ input {
+	display: none;
+}
 /* ASIDE SECTION 2 */
 .heading {
 	display: flex;
