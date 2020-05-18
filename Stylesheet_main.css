@@ -603,7 +603,7 @@ label[for="more"] {
 	text-align: center;
 	background-image: linear-gradient(red, blue);
 }
-label[for="more"] ~ input {
+label[for="more"]:checked ~ input {
 	display: none;
 }
 /* ASIDE SECTION 2 */

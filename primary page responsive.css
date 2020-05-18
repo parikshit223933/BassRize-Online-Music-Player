@@ -26,7 +26,7 @@
 		z-index: 5;
 		overflow: scroll;
 		transition: opacity ease-in-out 0.5s;
-	}
+    }
 	.playlist-content {
 		overflow: visible;
 	}
