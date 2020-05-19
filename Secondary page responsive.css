@@ -33,7 +33,11 @@
 		right: 0px;
 		top: 23.5%;
 		overflow: scroll;
-		transition: opacity ease-in-out 0.5s;
+		padding-left:10px;
+		z-index: 5;
+		padding-right:5px;
+		transition:visibility ease-in-out 0.3s;
+		transition: opacity ease-in-out 0.3s;
 	}
 	input[type="checkbox"]:checked ~ .section-2 {
 		visibility: visible;
