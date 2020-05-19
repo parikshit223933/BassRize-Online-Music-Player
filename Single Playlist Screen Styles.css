@@ -357,6 +357,7 @@ label {
 	top: 20%;
 	padding-bottom: 5px;
 	z-index: 3;
+	box-shadow: 0px 0px 2px 1px white;;
 	width: 70px;
 	font-size: 20px;
 	height: 21px;
