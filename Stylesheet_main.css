@@ -628,7 +628,7 @@ label[for="more"] {
 	z-index: 3;
 	width: 70px;
 	font-size: 20px;
-	height: 21px;
+	height: 25px;
     text-align: center;
     box-shadow: 0px 0px 2px 1px white;
 	background-image: linear-gradient(45deg, red -50%, blue 150%);
