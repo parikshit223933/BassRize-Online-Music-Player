@@ -1,16 +1,23 @@
 :root {
-	--background-image: linear-gradient(-45deg, #0037ff -100%, #33ff00 200%);
-	--background-color: #0c1027;
+	--background-image: url("media/background_image/3541800.jpg");
 	--jumbotron-color: #141b41;
 	--playlist-items-background-color: #1a1e33;
 	--playlist-items-background-color-on-hover: #2e3249;
 }
 body {
 	/* background-image: var(--background-image); */
-	background-color: var(--background-color);
+	background-image: var(--background-image);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin: 0px;
 	font-family: "Segoe UI", Arial, sans-serif;
 	color: white;
+}
+a
+{
+	text-decoration: none;
+	color:white;
 }
 h1,
 h2,
