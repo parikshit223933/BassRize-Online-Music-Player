@@ -80,7 +80,7 @@
 		display: none;
 	}
 	.extras > div:nth-child(4) {
-		display:none;
+		display: none;
 	}
 }
 @media screen and (max-width: 550px) {
@@ -133,8 +133,7 @@
 		width: 17vw;
 		font-size: 3.2vw;
 	}
-	#song-image
-	{
-		display:none;
+	#song-image {
+		display: none;
 	}
 }
