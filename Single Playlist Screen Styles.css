@@ -7,9 +7,10 @@
 body {
 	/* background-image: var(--background-image); */
 	background-image: var(--background-image);
-	background-position: center;
+	
+/* 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	margin: 0px;
 	font-family: "Segoe UI", Arial, sans-serif;
 	color: white;
@@ -169,7 +170,7 @@ main {
 }
 .section-1 {
 	width: 70%;
-	height: 82vh;
+	height: 85vh;
 	overflow: scroll;
 }
 .section-1::-webkit-scrollbar {
@@ -177,7 +178,7 @@ main {
 }
 .section-2 {
 	width: 28%;
-	height: 82vh;
+	height: 85vh;
 	z-index: 2;
 }
 
@@ -386,7 +387,7 @@ label ~ input {
 }
 
 .list {
-	height: 34vh;
+	height: 36vh;
 	overflow: scroll;
 }
 .list::-webkit-scrollbar {
