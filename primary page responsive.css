@@ -30,6 +30,7 @@
 		top: 23.5%;
 		z-index: 5;
 		overflow: scroll;
+		padding-left:10px;
 		transition: visibility ease-in-out 0.2s;
 		transition: opacity ease-in-out 0.2s;
 	}
