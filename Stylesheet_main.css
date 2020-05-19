@@ -830,9 +830,8 @@ hr {
 	0% {
 		color: yellow;
 	}
-	50%
-	{
-		color:orangered;
+	50% {
+		color: orangered;
 	}
 	100% {
 		color: red;
