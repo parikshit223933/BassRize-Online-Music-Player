@@ -2,7 +2,7 @@
 
 This online music player is completely based on HTML and CSS.
 
-# File Tree
+# Usage Tree
 1. index.html
     1. stylesheet_main.css
     2. primary page responsive.css
