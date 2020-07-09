@@ -1,4 +1,8 @@
 # BassRize-Online-Music-Player
+<img src="https://img.shields.io/github/issues/parikshit223933/BassRize-Online-Music-Player"> <img src="https://img.shields.io/github/forks/parikshit223933/BassRize-Online-Music-Player"> <img src="https://img.shields.io/github/stars/parikshit223933/BassRize-Online-Music-Player"> 
+
+(https://parikshit223933.github.io/BassRize-Online-Music-Player/)
+
 
 This online music player is completely based on HTML and CSS.
 
